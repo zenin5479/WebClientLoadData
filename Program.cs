@@ -7,13 +7,13 @@ namespace WebClientLoadData
    {
       static void Main()
       {
-         WebClient Client = new WebClient();
+         WebClient client = new WebClient();
          string address = "https://vk.com";
          string fileName = "Data.txt";
          try
          {
             Console.WriteLine("Загрузка данных по адресу " + address + " в файл " + fileName);
-            Client.DownloadFile(address, fileName);
+            client.DownloadFile(address, fileName);
          }
          catch (WebException exc)
          {
